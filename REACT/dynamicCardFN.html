@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #card {
+            width: 250px;
+            height: 400px;
+            padding: 10px;
+            box-shadow: 0 0 10px green;
+        }
+        #cardContainer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        
+        function createCard(name,imgurl){
+
+               
+                 return (
+                    <div id="card">
+                    <img src={imgurl} width="100%" height="200px" />
+                    <h2>{name}</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim! Voluptatum, doloribus.</p>
+                    <button>Contact</button>
+                 </div>
+                 )
+                   
+        }
+
+        function cardCollection(){
+
+            return (
+                    <div id = "cardContainer">
+                        {createCard("RAM", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7pnSo38xDr-eTsiCdKhTbXGPLvAKWeIc7X7isUCliKnK324s7pKD4Ok&s")}
+                        {createCard("SHYAM","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Uo1927F06VXEsC04nZ2rPZODBWEG6UtGRZM1kMyqblLn1og4-RnLf3Q&s")}
+                        {createCard("MOHAN", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-jHDEEKs5K4juFg0yGjgRB1lMarBcdEkRxZToNlBk7YrGKaAzv-jxL8&s")}
+                        {createCard("RAMESH", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReQ-mNxkzei3yXbptLSdyoh9Osz4TqRukI26y2c3F14PfMFud8iWn8V7s&s")}       
+                    </div>
+            )
+         }
+        ReactDOM.render(cardCollection(),document.getElementById("root"))
+    </script>
+</body>
+</html>
