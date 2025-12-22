@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card using JSX</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #card{
+            width: 250px;
+            height: 420px;
+            padding: 10px;
+            box-shadow: 0 0 10px green;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        var cardContainer = (
+            <div id="card">
+                <img 
+                src="data:image/jpeg;base64,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" 
+                alt="" height="250px" width= "100%"></img>
+                <h3>Smith John</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nostrum corporis ullam aut amet consequatur!</p>
+                <button>Contact</button>
+            </div>
+        )
+        ReactDOM.render(cardContainer,document.getElementById("root"))
+
+    </script>
+    
+</body>
+</html>

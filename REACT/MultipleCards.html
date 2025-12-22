@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card using JSX</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #card{
+            width: 250px;
+            height: 420px;
+            padding: 10px;
+            box-shadow: 0 0 10px green;
+        }
+        #Ccontainer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var imgURL = "https://static.vecteezy.com/system/resources/thumbnails/053/630/733/small/a-man-in-a-suit-and-tie-standing-with-his-arms-crossed-photo.jpeg"
+        var cardContainer = (
+            <div id="card">
+                <img src={imgURL} alt=""  width="100%" height="250"  />
+                <h3>Smith John</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore nostrum corporis ullam aut amet consequatur!</p>
+                <button>Contact</button>
+            </div>
+        )
+
+        let container = (
+            <div id="Ccontainer">
+                {cardContainer}
+                {cardContainer}
+                {cardContainer}
+                {cardContainer}
+               
+            </div>    
+        )
+        ReactDOM.render(container,document.getElementById("root"))
+
+    </script>
+    
+</body>
+</html>
