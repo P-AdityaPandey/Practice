@@ -1,0 +1,23 @@
+#navContainer {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 0 10px black;
+}
+
+#navContainer > div:first-child {
+  flex: 3;   /* 30% */
+}
+
+#links {
+  flex: 7;   /* 70% */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

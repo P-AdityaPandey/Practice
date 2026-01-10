@@ -1,0 +1,14 @@
+#container {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px;
+
+
+}
+img{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+#card {
+   height: 500px;
+   width: 310px;
+   box-shadow:  0 0 10px  green;
+}
+img{
+    height: 250px;
+    width: 100%;
+    
+}
