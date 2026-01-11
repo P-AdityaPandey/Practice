@@ -1,0 +1,22 @@
+[ 
+   { 
+     "title": "Python In Simple Way", 
+     "isbn": 12345, 
+     "downloadable": true, 
+     "no_of_reviews": 10, 
+     "author": { 
+                  "name": "Daniel Kohen", 
+    "callname": "Dan" 
+        } 
+   }, 
+   { 
+     "title": "MongoDB In Simple Way", 
+     "isbn": 45678, 
+     "downloadable": false, 
+     "no_of_reviews": 5, 
+     "author": { 
+                  "name": "Shiva Ramachandran", 
+    "callname": "Shiva" 
+        } 
+   }    
+] 
