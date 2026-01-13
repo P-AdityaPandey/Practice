@@ -9,5 +9,4 @@ function updateLiveTime() {
     }
 }
 updateLiveTime();
-
 setInterval(updateLiveTime, 1000);
