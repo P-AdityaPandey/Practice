@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid green;
+    height: 100vh;
+
+}
+#top{
+    height: 5vh;
+    text-align: center;
+    align-content: center;
+  
+  
+ 
+}
+#dnt{
+    height: 5vh;
+    display: flex;
+    
+   
+
+}
+
+#date{
+    width: 50vw;
+    align-content: center;
+    text-align: center;
+   
+}
+#time{
+    width: 50vw;
+    align-content: center;
+    text-align: center;
+   
+}
+#quad{
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 60% 40%;
+    padding: 15px;
+    border: 5px yellow solid;
+
+}
+#remark{
+    height: 10vh;
+
+}
+#thought{
+    height: 10vh;
+
+}
+#jour{
+    height: 10vh;
+
+}
