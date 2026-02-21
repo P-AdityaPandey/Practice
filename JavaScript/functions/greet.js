@@ -1,6 +1,7 @@
-var name = "Ram";
 
 function greet (name) {
-    return "Hello "+ name;
+    let name = "Ram";
+    return "Hello " + name;
 }
-greet();
+
+console.log(greet());
